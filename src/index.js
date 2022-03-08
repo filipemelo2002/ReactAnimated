@@ -16,6 +16,10 @@ const ReactAnimated = ({navigation}) => {
         </View>
 
         <View style={{marginBottom: 8}}>
+          <Button title="Scale" onPress={()=> navigation.navigate("Scale")}/>
+        </View>
+
+        <View style={{marginBottom: 8}}>
           <Button title="React Animated.decay" onPress={()=> navigation.navigate("Decay")} style={styles.button}/>
         </View>
       </View>
