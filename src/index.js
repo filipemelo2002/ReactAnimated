@@ -28,6 +28,10 @@ const ReactAnimated = ({navigation}) => {
         </View>
 
         <View style={{marginBottom: 8}}>
+          <Button title="InterpolateColors" onPress={()=> navigation.navigate("InterpolateColors")}/>
+        </View>
+
+        <View style={{marginBottom: 8}}>
           <Button title="React Animated.decay" onPress={()=> navigation.navigate("Decay")} style={styles.button}/>
         </View>
       </View>
