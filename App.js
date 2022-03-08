@@ -1,6 +1,7 @@
 import React from 'react';
 import Decay from './src/Decay';
 import Opacity from './src/Opacity';
+import Translate from './src/Translate';
 import ReactAnimated from './src';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -14,6 +15,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Home"> 
         <Stack.Screen name="Home" component={ReactAnimated}  options={{ title: 'React Animated Library' }} />
         <Stack.Screen name="Opacity" component={Opacity}  options={{ title: 'Opacity' }} />
+        <Stack.Screen name="Translate" component={Translate}  options={{ title: 'Translate' }} />
         <Stack.Screen name="Decay" component={Decay}  options={{ title: 'Decay' }} />
       </Stack.Navigator>
     </NavigationContainer>
