@@ -7,7 +7,12 @@ const ReactAnimated = ({navigation}) => {
   return (
     <ScrollView style={styles.scrollView} contentContainerStyle={styles.container}>
       <View style={styles.container}>
-        <Button title="React Animated.decay" onPress={()=> navigation.navigate("Decay")} style={styles.button}/>
+        <View style={{marginBottom: 8}}>
+          <Button title="Opacity" onPress={()=> navigation.navigate("Opacity")}/>
+        </View>
+        <View style={{marginBottom: 8}}>
+          <Button title="React Animated.decay" onPress={()=> navigation.navigate("Decay")} style={styles.button}/>
+        </View>
       </View>
     </ScrollView>
   )
@@ -22,9 +27,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  button: {
-    textTransform: "none"
   }
 });
 
