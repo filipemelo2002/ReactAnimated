@@ -3,6 +3,7 @@ import Decay from './src/Decay';
 import Opacity from './src/Opacity';
 import Translate from './src/Translate';
 import Scale from './src/Scale';
+import WidthHeight from './src/WidthHeight';
 import ReactAnimated from './src';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name="Opacity" component={Opacity}  options={{ title: 'Opacity' }} />
         <Stack.Screen name="Scale" component={Scale}  options={{ title: 'Scale' }} />
         <Stack.Screen name="Translate" component={Translate}  options={{ title: 'Translate' }} />
+        <Stack.Screen name="WidthHeight" component={WidthHeight}  options={{ title: 'WidthHeight' }} />
         <Stack.Screen name="Decay" component={Decay}  options={{ title: 'Decay' }} />
       </Stack.Navigator>
     </NavigationContainer>
